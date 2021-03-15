@@ -64,7 +64,7 @@ class SingleOtpInput extends PureComponent<*> {
     // Prevent calling function if input already in focus
     if (prevProps.focus !== focus && (input && focus)) {
       input.focus();
-      input.select();
+      //input.select();
     }
   }
 
@@ -345,7 +345,7 @@ class OtpInput extends Component<Props, State> {
           onPaste={this.handleOnPaste}
           onFocus={e => {
             this.setState({ activeInput: i });
-            e.target.select();
+            //e.target.select();
           }}
           onBlur={() => this.setState({ activeInput: -1 })}
           separator={separator}
